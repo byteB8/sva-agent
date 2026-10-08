@@ -27,7 +27,7 @@ ran in thinking mode (T=0.8, top-p 0.95).
 |---|---|---|---|
 | Qwen3-8B | 22.2 | 30.7 | 23.2 / 35.2 |
 | CodeV-SVA-8B (SVA specialist) | 40.5 | 59.9 | 41.1 / 61.1 |
-| Qwen3.8-27B (FP8) | **42.7** | **63.9** | **45.2 / 66.1** |
+| Qwen3.8-27B (FP8) | **41.9** | **63.9** | **44.4 / 66.1** |
 
 - **The open-source scorer agrees with Jasper.** On the CodeV-SVA authors'
   corrected copy of FVEval, with their prompts, Qwen3-8B scores 34.6 / 49.3
@@ -35,12 +35,17 @@ ran in thinking mode (T=0.8, top-p 0.95).
   scorer's 95% intervals ([26.8, 42.5] and [45.3, 53.2]).
 - **The checker improves answers without seeing the reference.**
   - Picking a sample that compiles, then the largest class of mutually
-    equivalent samples, adds +4.1 (human) and +7.4 (machine) points over a
+    equivalent samples, adds +4.4 (human) and +7.4 (machine) points over a
     single sample (pooled over three models, p < 0.01).
-  - Most of that gain is the compile check itself.
-  - Voting by proven meaning beats voting by identical text on the machine
-    suite (+1.1, p = 0.02), and helps most for the model whose samples vary
-    most in wording.
+  - On the machine suite most of that gain is the compile check itself.
+  - Voting by proven meaning beats voting by identical text on both suites
+    (+2.2, p = 0.015; +1.1, p = 0.023). It helps most where a model's
+    samples disagree in meaning: Qwen3-8B averages 2.9 (human) and 1.8
+    (machine) classes of mutually equivalent samples per task, the 27B
+    model 1.1 with half as many samples, leaving a vote little to decide.
+- **The 27B model's human-suite score is limited by the token budget.** It
+  used up all 16,384 tokens on 20% of its human-suite samples (Qwen3-8B on
+  none), and an answer cut off mid-reasoning counts as a failure.
 - **Two benchmark bugs found:** a reference whose operator precedence makes it
   check half of its prompt, and synthetic testbenches that wire their signals
   together. The corrected copy also keeps tasks whose assertions are

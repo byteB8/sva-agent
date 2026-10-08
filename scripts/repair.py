@@ -21,7 +21,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 from generate import seed_for  # noqa: E402
 from sva_agent import checker, data, prompts  # noqa: E402
-from sva_agent.checker import final_answer  # noqa: E402
+from sva_agent.checker import final_answer, sample_answer  # noqa: E402
 
 FOLLOW_UP = """The SystemVerilog checker could not use your assertion:
 {error}
@@ -66,7 +66,7 @@ def main():
     keep = data.scorable_keys() if args.scorable else None
     convo = {}                        # row index -> conversation so far
     for i, r in enumerate(rows):
-        r["answer"] = final_answer(r["answer"])
+        r["answer"] = sample_answer(r)
         r["repair_rounds"] = 0
         if keep is not None and r["key"] not in keep:
             continue
@@ -96,8 +96,9 @@ def main():
         outs = llm.chat([convo[i] for i in todo], params,
                         chat_template_kwargs={"enable_thinking": args.thinking == "on"})
         for i, o in zip(todo, outs):
-            answer = final_answer(o.outputs[0].text)
-            rows[i].update(answer=answer, repair_rounds=rnd)
+            c = o.outputs[0]
+            answer = final_answer(c.text, c.finish_reason != "length")
+            rows[i].update(answer=answer, repair_rounds=rnd, finish=c.finish_reason)
             err = syntax_error(tasks[rows[i]["key"]], answer)
             if err is None:
                 del convo[i]

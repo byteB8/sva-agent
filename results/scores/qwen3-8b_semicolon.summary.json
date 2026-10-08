@@ -3,8 +3,9 @@
   "mode": "free",
   "bound": 20,
   "fix_semicolon": true,
+  "checker_crash_samples": 7,
   "unique_answers": 2110,
-  "check_seconds": 23.4,
+  "check_seconds": 33.0,
   "suites": {
     "human": {
       "tasks": 62,

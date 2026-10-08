@@ -8,34 +8,34 @@
     "tasks": 62,
     "items": 186,
     "semantic_vote - compiling": {
-      "diff": 2.3,
+      "diff": 2.6,
       "ci95": [
-        -0.7,
-        5.5
+        -0.2,
+        5.7
       ],
-      "p_le_0": 0.0688
+      "p_le_0": 0.0349
     },
     "semantic_vote - text_vote": {
-      "diff": 1.6,
+      "diff": 2.2,
       "ci95": [
-        -0.5,
+        0.5,
         4.3
       ],
-      "p_le_0": 0.1177
+      "p_le_0": 0.0147
     },
     "semantic_vote - single": {
-      "diff": 4.1,
+      "diff": 4.4,
       "ci95": [
-        0.9,
-        7.6
+        1.3,
+        7.7
       ],
-      "p_le_0": 0.0061
+      "p_le_0": 0.0026
     },
     "compiling - single": {
-      "diff": 1.8,
+      "diff": 1.7,
       "ci95": [
-        1.0,
-        2.9
+        0.9,
+        2.8
       ],
       "p_le_0": 0.0
     }
@@ -49,7 +49,7 @@
         -0.2,
         1.9
       ],
-      "p_le_0": 0.0606
+      "p_le_0": 0.0625
     },
     "semantic_vote - text_vote": {
       "diff": 1.1,
@@ -70,7 +70,7 @@
     "compiling - single": {
       "diff": 6.6,
       "ci95": [
-        5.6,
+        5.7,
         7.6
       ],
       "p_le_0": 0.0

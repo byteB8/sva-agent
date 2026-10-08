@@ -76,6 +76,25 @@ CUDA 12.4, GPUs connected only through the CPU) would generate:
    access, does not. `disable_custom_all_reduce=True` fixed it, and the GPUs
    then drew ~225 W while generating.
 
+## About the token budget
+
+**Qwen3.8-27B often thinks past 16,384 tokens on the human suite.** 49 of its
+248 human-suite samples (19.8%) stopped at the token limit before giving an
+answer, against 1 of 1,104 on the machine suite. Qwen3-8B never did, and
+CodeV-SVA-8B did on 1% of its samples. A cut-off sample has no answer and
+counts as a failure, so at this budget the 27B model's human-suite score is a
+lower bound.
+
+**Cut-off reasoning is not an answer.** Qwen3.8's chat template opens
+`<think>` in the prompt, so its output starts mid-reasoning, and an output cut
+off there contains no tag at all. An earlier version of the scorer took such
+an output whole as the answer and graded the first assertion drafted inside
+the reasoning. 33 of the 50 cut-off samples compiled that way, and 2 counted
+as equivalent (human-suite Func@1 42.7 instead of 41.9). `final_answer` now
+takes the finish reason into account. The repair step had skipped those 33
+samples because their drafts compiled, so the 27B model's after-repair
+human-suite score (44.4) is also a lower bound.
+
 ## About comparing with published scores
 
 **The published scores are on a different version of the benchmark.** The
@@ -165,4 +184,7 @@ Paired bootstrap over tasks (10,000 resamples, `scripts/compare.py`):
 Discarding answers that do not compile is the large, certain gain. Grouping
 the rest by proven meaning beats grouping them by text on both suites. Its
 edge over simply picking any compiling answer is not significant for one
-model; results from the other models will add power.
+model. Pooled over the three models (`results/summary.md`), it is +2.6 points
+on the human suite (p = 0.035) and +0.8 on the machine suite (p = 0.06), and
+the edge over the text vote is significant on both (+2.2, p = 0.015; +1.1,
+p = 0.023).

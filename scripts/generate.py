@@ -79,7 +79,8 @@ def main():
                 f.write(json.dumps({
                     "key": t.key, "sample": i, "model": args.model,
                     "thinking": args.thinking, "temperature": args.temperature,
-                    "answer": final_answer(c.text), "tokens": len(c.token_ids),
+                    "answer": final_answer(c.text, c.finish_reason != "length"),
+                    "tokens": len(c.token_ids),
                     "finish": c.finish_reason, "raw": c.text,
                 }) + "\n")
     print(f"{len(tasks)} tasks x {args.n} samples, {total} output tokens in {seconds:.0f} s "

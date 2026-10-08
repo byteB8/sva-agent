@@ -3,12 +3,12 @@
   "suites": {
     "human": {
       "tasks": 62,
-      "single_sample_equivalent": 42.7,
-      "compiling_sample_equivalent": 44.8,
-      "text_vote_equivalent": 46.8,
+      "single_sample_equivalent": 41.9,
+      "compiling_sample_equivalent": 43.7,
+      "text_vote_equivalent": 45.2,
       "voted_equivalent": 45.2,
-      "any_sample_equivalent": 53.2,
-      "mean_classes": 1.55
+      "any_sample_equivalent": 50.0,
+      "mean_classes": 1.13
     },
     "machine": {
       "tasks": 276,

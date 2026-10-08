@@ -10,11 +10,14 @@ PY=${PY:-python3}
 for name in "$@"; do
   [ -s "results/raw/$name.jsonl" ] && $PY scripts/score.py "results/raw/$name.jsonl" --workers 4
   [ -s "results/raw/$name.jsonl" ] && $PY scripts/score.py "results/raw/$name.jsonl" --workers 4 --fix-semicolon
-  [ -s "results/scores/$name.verdicts.jsonl" ] && [[ "$name" != *codev* ]] && \
+  [ -s "results/scores/$name.verdicts.jsonl" ] && [[ "$name" != *-codev ]] && \
     $PY scripts/vote.py "results/scores/$name.verdicts.jsonl" --workers 4
   [ -s "results/raw/$name.repaired.jsonl" ] && $PY scripts/score.py "results/raw/$name.repaired.jsonl" --workers 4
 done
-votes=(results/scores/*.vote_tasks.jsonl)
-[ -e "${votes[0]}" ] && $PY scripts/compare.py "${votes[@]}" --out results/scores/pooled.compare.json
+votes=()                                      # in the order given, so reruns match
+for name in "$@"; do
+  [ -s "results/scores/$name.vote_tasks.jsonl" ] && votes+=("results/scores/$name.vote_tasks.jsonl")
+done
+[ ${#votes[@]} -gt 0 ] && $PY scripts/compare.py "${votes[@]}" --out results/scores/pooled.compare.json
 [ -s results/scores/qwen3-8b-codev.verdicts.jsonl ] && $PY scripts/calibrate.py results/scores/qwen3-8b-codev.verdicts.jsonl
 $PY scripts/report.py

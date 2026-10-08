@@ -49,7 +49,7 @@ def main():
     keep = data.scorable_keys(args.validation)
     rows = [r for r in rows if r["key"] in keep]
     for r in rows:
-        r["answer"] = checker.final_answer(r["answer"])   # empty if reasoning was cut off
+        r["answer"] = checker.sample_answer(r)   # empty if reasoning was cut off
 
     unique = sorted({(r["key"], r["answer"]) for r in rows})
     start = time.monotonic()

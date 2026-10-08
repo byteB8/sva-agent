@@ -55,16 +55,26 @@ null this new
 """.split())
 
 
-def final_answer(text: str) -> str:
+def final_answer(text: str, finished: bool = True) -> str:
     """A model's answer without its reasoning block.
 
     Empty if the reasoning was cut off (by the token limit) before an answer.
+    Some chat templates (Qwen3.8's) open `<think>` in the prompt, so a cut-off
+    output need not start with it: pass `finished=False` when generation
+    stopped at the token limit.
     """
     if "</think>" in text:
         return text.split("</think>", 1)[1].strip()
-    if text.lstrip().startswith("<think>"):
+    if not finished or text.lstrip().startswith("<think>"):
         return ""
     return text.strip()
+
+
+def sample_answer(row: dict) -> str:
+    """The final answer of a stored sample, from its full output when kept."""
+    if row.get("raw") is not None:
+        return final_answer(row["raw"], row.get("finish") != "length")
+    return final_answer(row["answer"])
 
 
 def extract_code(response: str) -> str:

@@ -22,6 +22,21 @@ endmodule
 """
 
 
+def test_final_answer_drops_reasoning_and_cut_off_outputs():
+    assert checker.final_answer("<think>\nplan\n</think>\n\nassert property (a);") \
+        == "assert property (a);"
+    assert checker.final_answer("<think>\nplan, cut off") == ""
+    # Templates that open <think> in the prompt: the output starts mid-reasoning,
+    # and a draft in it is not the answer when generation hit the token limit.
+    cut = "We need ... ```systemverilog\nassert property (a);\n``` ... maybe"
+    assert checker.final_answer(cut, finished=False) == ""
+    assert checker.final_answer("plan\n</think>\nassert property (b);", finished=False) \
+        == "assert property (b);"
+    assert checker.sample_answer({"raw": cut, "finish": "length", "answer": cut}) == ""
+    assert checker.sample_answer({"raw": None, "answer": "assert property (a);"}) \
+        == "assert property (a);"
+
+
 def test_extract_code_prefers_fenced_block():
     assert checker.extract_code("text\n```systemverilog\nassert property (a);\n```\nmore") \
         == "assert property (a);"

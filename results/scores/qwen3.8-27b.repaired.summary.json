@@ -4,18 +4,18 @@
   "bound": 20,
   "fix_semicolon": false,
   "checker_crash_samples": 0,
-  "unique_answers": 888,
-  "check_seconds": 13.9,
+  "unique_answers": 870,
+  "check_seconds": 12.2,
   "suites": {
     "human": {
       "tasks": 62,
       "samples_per_task": 4,
-      "syntax@1": 98.0,
-      "syntax@4": 100.0,
-      "equivalent@1": 45.2,
-      "equivalent@4": 54.8,
-      "relaxed@1": 79.0,
-      "relaxed@4": 88.7
+      "syntax@1": 84.7,
+      "syntax@4": 95.2,
+      "equivalent@1": 44.4,
+      "equivalent@4": 53.2,
+      "relaxed@1": 74.2,
+      "relaxed@4": 85.5
     },
     "machine": {
       "tasks": 276,

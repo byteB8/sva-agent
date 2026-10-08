@@ -28,7 +28,7 @@
 {"key": "human/arbiter_sticky_lru_arbiter_9", "single": 0.0, "compiling": 0.0, "text_vote": 0.0, "semantic_vote": 0.0, "any": 0.0}
 {"key": "human/arbiter_sticky_rr_arbiter_0", "single": 1.0, "compiling": 1.0, "text_vote": 1.0, "semantic_vote": 1.0, "any": 1.0}
 {"key": "human/arbiter_sticky_rr_arbiter_10", "single": 0.0, "compiling": 0.0, "text_vote": 0.0, "semantic_vote": 0.0, "any": 0.0}
-{"key": "human/arbiter_sticky_rr_arbiter_11", "single": 0.25, "compiling": 0.5, "text_vote": 1.0, "semantic_vote": 1.0, "any": 1.0}
+{"key": "human/arbiter_sticky_rr_arbiter_11", "single": 0.0, "compiling": 0.0, "text_vote": 0.0, "semantic_vote": 0.0, "any": 0.0}
 {"key": "human/arbiter_sticky_rr_arbiter_12", "single": 0.25, "compiling": 0.25, "text_vote": 0.0, "semantic_vote": 0.0, "any": 1.0}
 {"key": "human/arbiter_sticky_rr_arbiter_13", "single": 0.25, "compiling": 0.25, "text_vote": 0.0, "semantic_vote": 0.0, "any": 1.0}
 {"key": "human/arbiter_sticky_rr_arbiter_3", "single": 1.0, "compiling": 1.0, "text_vote": 1.0, "semantic_vote": 1.0, "any": 1.0}
@@ -37,7 +37,7 @@
 {"key": "human/arbiter_sticky_rr_arbiter_6", "single": 0.0, "compiling": 0.0, "text_vote": 0.0, "semantic_vote": 0.0, "any": 0.0}
 {"key": "human/arbiter_sticky_rr_arbiter_9", "single": 0.0, "compiling": 0.0, "text_vote": 0.0, "semantic_vote": 0.0, "any": 0.0}
 {"key": "human/counter_counter_0", "single": 0.0, "compiling": 0.0, "text_vote": 0.0, "semantic_vote": 0.0, "any": 0.0}
-{"key": "human/counter_counter_1", "single": 0.25, "compiling": 0.25, "text_vote": 0.0, "semantic_vote": 0.0, "any": 1.0}
+{"key": "human/counter_counter_1", "single": 0.0, "compiling": 0.0, "text_vote": 0.0, "semantic_vote": 0.0, "any": 0.0}
 {"key": "human/counter_counter_2", "single": 1.0, "compiling": 1.0, "text_vote": 1.0, "semantic_vote": 1.0, "any": 1.0}
 {"key": "human/counter_counter_3", "single": 0.75, "compiling": 0.75, "text_vote": 1.0, "semantic_vote": 1.0, "any": 1.0}
 {"key": "human/counter_counter_4", "single": 0.0, "compiling": 0.0, "text_vote": 0.0, "semantic_vote": 0.0, "any": 0.0}
@@ -59,7 +59,7 @@
 {"key": "human/ram_ram_3", "single": 1.0, "compiling": 1.0, "text_vote": 1.0, "semantic_vote": 1.0, "any": 1.0}
 {"key": "human/ram_ram_4", "single": 1.0, "compiling": 1.0, "text_vote": 1.0, "semantic_vote": 1.0, "any": 1.0}
 {"key": "human/ram_ram_5", "single": 1.0, "compiling": 1.0, "text_vote": 1.0, "semantic_vote": 1.0, "any": 1.0}
-{"key": "human/ram_ram_6", "single": 0.25, "compiling": 0.25, "text_vote": 1.0, "semantic_vote": 0.0, "any": 1.0}
+{"key": "human/ram_ram_6", "single": 0.25, "compiling": 0.3333333333333333, "text_vote": 1.0, "semantic_vote": 1.0, "any": 1.0}
 {"key": "machine/nl2sva_machine_3_0_0", "single": 1.0, "compiling": 1.0, "text_vote": 1.0, "semantic_vote": 1.0, "any": 1.0}
 {"key": "machine/nl2sva_machine_3_100_0", "single": 1.0, "compiling": 1.0, "text_vote": 1.0, "semantic_vote": 1.0, "any": 1.0}
 {"key": "machine/nl2sva_machine_3_103_0", "single": 0.0, "compiling": 0.0, "text_vote": 0.0, "semantic_vote": 0.0, "any": 0.0}
@@ -231,7 +231,7 @@
 {"key": "machine/nl2sva_machine_4_130_0", "single": 0.25, "compiling": 0.5, "text_vote": 0.0, "semantic_vote": 0.0, "any": 1.0}
 {"key": "machine/nl2sva_machine_4_132_0", "single": 1.0, "compiling": 1.0, "text_vote": 1.0, "semantic_vote": 1.0, "any": 1.0}
 {"key": "machine/nl2sva_machine_4_133_0", "single": 0.0, "compiling": 0.0, "text_vote": 0.0, "semantic_vote": 0.0, "any": 0.0}
-{"key": "machine/nl2sva_machine_4_134_0", "single": 0.25, "compiling": 0.25, "text_vote": 0.0, "semantic_vote": 0.0, "any": 1.0}
+{"key": "machine/nl2sva_machine_4_134_0", "single": 0.25, "compiling": 0.3333333333333333, "text_vote": 0.0, "semantic_vote": 0.0, "any": 1.0}
 {"key": "machine/nl2sva_machine_4_135_0", "single": 0.25, "compiling": 0.25, "text_vote": 1.0, "semantic_vote": 0.0, "any": 1.0}
 {"key": "machine/nl2sva_machine_4_136_0", "single": 0.0, "compiling": 0.0, "text_vote": 0.0, "semantic_vote": 0.0, "any": 0.0}
 {"key": "machine/nl2sva_machine_4_137_0", "single": 1.0, "compiling": 1.0, "text_vote": 1.0, "semantic_vote": 1.0, "any": 1.0}
