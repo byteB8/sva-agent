@@ -1,0 +1,23 @@
+{
+  "verdicts_file": "results/scores/codev-sva-8b.verdicts.jsonl",
+  "suites": {
+    "human": {
+      "tasks": 62,
+      "single_sample_equivalent": 40.5,
+      "compiling_sample_equivalent": 41.5,
+      "text_vote_equivalent": 43.5,
+      "voted_equivalent": 45.2,
+      "any_sample_equivalent": 56.5,
+      "mean_classes": 2.79
+    },
+    "machine": {
+      "tasks": 276,
+      "single_sample_equivalent": 59.9,
+      "compiling_sample_equivalent": 61.8,
+      "text_vote_equivalent": 62.7,
+      "voted_equivalent": 62.7,
+      "any_sample_equivalent": 68.5,
+      "mean_classes": 1.35
+    }
+  }
+}

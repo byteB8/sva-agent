@@ -1,0 +1,79 @@
+{
+  "inputs": [
+    "results/scores/qwen3-8b.vote_tasks.jsonl",
+    "results/scores/codev-sva-8b.vote_tasks.jsonl",
+    "results/scores/qwen3.8-27b.vote_tasks.jsonl"
+  ],
+  "human": {
+    "tasks": 62,
+    "items": 186,
+    "semantic_vote - compiling": {
+      "diff": 2.3,
+      "ci95": [
+        -0.7,
+        5.5
+      ],
+      "p_le_0": 0.0688
+    },
+    "semantic_vote - text_vote": {
+      "diff": 1.6,
+      "ci95": [
+        -0.5,
+        4.3
+      ],
+      "p_le_0": 0.1177
+    },
+    "semantic_vote - single": {
+      "diff": 4.1,
+      "ci95": [
+        0.9,
+        7.6
+      ],
+      "p_le_0": 0.0061
+    },
+    "compiling - single": {
+      "diff": 1.8,
+      "ci95": [
+        1.0,
+        2.9
+      ],
+      "p_le_0": 0.0
+    }
+  },
+  "machine": {
+    "tasks": 276,
+    "items": 828,
+    "semantic_vote - compiling": {
+      "diff": 0.8,
+      "ci95": [
+        -0.2,
+        1.9
+      ],
+      "p_le_0": 0.0606
+    },
+    "semantic_vote - text_vote": {
+      "diff": 1.1,
+      "ci95": [
+        0.1,
+        2.2
+      ],
+      "p_le_0": 0.0228
+    },
+    "semantic_vote - single": {
+      "diff": 7.4,
+      "ci95": [
+        6.0,
+        8.9
+      ],
+      "p_le_0": 0.0
+    },
+    "compiling - single": {
+      "diff": 6.6,
+      "ci95": [
+        5.6,
+        7.6
+      ],
+      "p_le_0": 0.0
+    }
+  }
+}

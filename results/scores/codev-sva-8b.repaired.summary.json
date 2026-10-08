@@ -1,0 +1,31 @@
+{
+  "samples_file": "results/raw/codev-sva-8b.repaired.jsonl",
+  "mode": "free",
+  "bound": 20,
+  "fix_semicolon": false,
+  "checker_crash_samples": 0,
+  "unique_answers": 1636,
+  "check_seconds": 24.1,
+  "suites": {
+    "human": {
+      "tasks": 62,
+      "samples_per_task": 8,
+      "syntax@1": 96.4,
+      "syntax@8": 100.0,
+      "equivalent@1": 41.1,
+      "equivalent@8": 56.5,
+      "relaxed@1": 74.8,
+      "relaxed@8": 88.7
+    },
+    "machine": {
+      "tasks": 276,
+      "samples_per_task": 8,
+      "syntax@1": 96.0,
+      "syntax@8": 98.2,
+      "equivalent@1": 61.1,
+      "equivalent@8": 68.5,
+      "relaxed@1": 71.3,
+      "relaxed@8": 77.2
+    }
+  }
+}

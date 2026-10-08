@@ -1,0 +1,72 @@
+{
+  "human": {
+    "tasks": 62,
+    "semantic_vote - compiling": {
+      "diff": 3.7,
+      "ci95": [
+        -0.8,
+        8.5
+      ],
+      "p_le_0": 0.0571
+    },
+    "semantic_vote - text_vote": {
+      "diff": 1.6,
+      "ci95": [
+        0.0,
+        4.8
+      ],
+      "p_le_0": 0.3618
+    },
+    "semantic_vote - single": {
+      "diff": 4.6,
+      "ci95": [
+        0.0,
+        9.5
+      ],
+      "p_le_0": 0.0251
+    },
+    "compiling - single": {
+      "diff": 1.0,
+      "ci95": [
+        0.3,
+        1.9
+      ],
+      "p_le_0": 0.0016
+    }
+  },
+  "machine": {
+    "tasks": 276,
+    "semantic_vote - compiling": {
+      "diff": 0.9,
+      "ci95": [
+        -0.5,
+        2.3
+      ],
+      "p_le_0": 0.1081
+    },
+    "semantic_vote - text_vote": {
+      "diff": 0.0,
+      "ci95": [
+        -1.4,
+        1.4
+      ],
+      "p_le_0": 0.61
+    },
+    "semantic_vote - single": {
+      "diff": 2.8,
+      "ci95": [
+        1.3,
+        4.4
+      ],
+      "p_le_0": 0.0001
+    },
+    "compiling - single": {
+      "diff": 1.9,
+      "ci95": [
+        1.2,
+        2.7
+      ],
+      "p_le_0": 0.0
+    }
+  }
+}

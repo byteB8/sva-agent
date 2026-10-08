@@ -1,0 +1,20 @@
+{
+  "human_codev": {
+    "tasks": 57,
+    "func_at_1": 34.6,
+    "ci95": [
+      26.8,
+      42.5
+    ],
+    "published": 32.3
+  },
+  "machine_codev": {
+    "tasks": 269,
+    "func_at_1": 49.3,
+    "ci95": [
+      45.3,
+      53.2
+    ],
+    "published": 46.1
+  }
+}

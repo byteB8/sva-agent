@@ -1,0 +1,31 @@
+{
+  "samples_file": "results/raw/qwen3-8b-codev.jsonl",
+  "mode": "free",
+  "bound": 20,
+  "fix_semicolon": true,
+  "checker_crash_samples": 1,
+  "unique_answers": 1095,
+  "check_seconds": 13.8,
+  "suites": {
+    "human_codev": {
+      "tasks": 57,
+      "samples_per_task": 4,
+      "syntax@1": 91.2,
+      "syntax@4": 98.2,
+      "equivalent@1": 39.5,
+      "equivalent@4": 66.7,
+      "relaxed@1": 61.0,
+      "relaxed@4": 84.2
+    },
+    "machine_codev": {
+      "tasks": 269,
+      "samples_per_task": 4,
+      "syntax@1": 86.9,
+      "syntax@4": 98.1,
+      "equivalent@1": 58.9,
+      "equivalent@4": 84.8,
+      "relaxed@1": 65.1,
+      "relaxed@4": 91.1
+    }
+  }
+}

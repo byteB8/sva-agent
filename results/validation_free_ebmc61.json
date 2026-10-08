@@ -1,0 +1,316 @@
+{
+  "mode": "free",
+  "bound": 20,
+  "seconds": 80.0,
+  "suites": {
+    "human": {
+      "tasks": 79,
+      "self_equivalent": 62,
+      "excluded": {
+        "human/fsm_transition_fsm_transition_1": {
+          "syntax": false,
+          "ref_implies_cand": null,
+          "cand_implies_ref": null,
+          "error": "timeout",
+          "equivalent": false,
+          "relaxed": false
+        },
+        "human/fifo_1r1w_fifo_3": {
+          "syntax": true,
+          "ref_implies_cand": false,
+          "cand_implies_ref": false,
+          "error": null,
+          "equivalent": false,
+          "relaxed": false
+        },
+        "human/fifo_1r1w_fifo_4": {
+          "syntax": true,
+          "ref_implies_cand": false,
+          "cand_implies_ref": false,
+          "error": null,
+          "equivalent": false,
+          "relaxed": false
+        },
+        "human/multi_fifo_multi_fifo_1": {
+          "syntax": false,
+          "ref_implies_cand": null,
+          "cand_implies_ref": null,
+          "error": "CONVERSION ERROR",
+          "equivalent": false,
+          "relaxed": false
+        },
+        "human/multi_fifo_multi_fifo_2": {
+          "syntax": false,
+          "ref_implies_cand": null,
+          "cand_implies_ref": null,
+          "error": "CONVERSION ERROR",
+          "equivalent": false,
+          "relaxed": false
+        },
+        "human/multi_fifo_multi_fifo_4": {
+          "syntax": false,
+          "ref_implies_cand": null,
+          "cand_implies_ref": null,
+          "error": "CONVERSION ERROR",
+          "equivalent": false,
+          "relaxed": false
+        },
+        "human/multi_fifo_multi_fifo_5": {
+          "syntax": false,
+          "ref_implies_cand": null,
+          "cand_implies_ref": null,
+          "error": "CONVERSION ERROR",
+          "equivalent": false,
+          "relaxed": false
+        },
+        "human/multi_fifo_multi_fifo_6": {
+          "syntax": false,
+          "ref_implies_cand": null,
+          "cand_implies_ref": null,
+          "error": "CONVERSION ERROR",
+          "equivalent": false,
+          "relaxed": false
+        },
+        "human/fsm_sequence_fsm_sequence_0": {
+          "syntax": false,
+          "ref_implies_cand": null,
+          "cand_implies_ref": null,
+          "error": "timeout",
+          "equivalent": false,
+          "relaxed": false
+        },
+        "human/fsm_sequence_fsm_sequence_1": {
+          "syntax": false,
+          "ref_implies_cand": null,
+          "cand_implies_ref": null,
+          "error": "timeout",
+          "equivalent": false,
+          "relaxed": false
+        },
+        "human/fsm_sequence_fsm_sequence_3": {
+          "syntax": false,
+          "ref_implies_cand": null,
+          "cand_implies_ref": null,
+          "error": "timeout",
+          "equivalent": false,
+          "relaxed": false
+        },
+        "human/fifo_1r1w_pattern_fifo_3": {
+          "syntax": true,
+          "ref_implies_cand": false,
+          "cand_implies_ref": false,
+          "error": null,
+          "equivalent": false,
+          "relaxed": false
+        },
+        "human/fifo_1r1w_pattern_fifo_4": {
+          "syntax": true,
+          "ref_implies_cand": false,
+          "cand_implies_ref": false,
+          "error": null,
+          "equivalent": false,
+          "relaxed": false
+        },
+        "human/fifo_1r1w_random_fifo_3": {
+          "syntax": true,
+          "ref_implies_cand": false,
+          "cand_implies_ref": false,
+          "error": null,
+          "equivalent": false,
+          "relaxed": false
+        },
+        "human/fifo_1r1w_random_fifo_4": {
+          "syntax": true,
+          "ref_implies_cand": false,
+          "cand_implies_ref": false,
+          "error": null,
+          "equivalent": false,
+          "relaxed": false
+        },
+        "human/fifo_1r1w_bypass_fifo_3": {
+          "syntax": true,
+          "ref_implies_cand": false,
+          "cand_implies_ref": false,
+          "error": null,
+          "equivalent": false,
+          "relaxed": false
+        },
+        "human/fifo_1r1w_bypass_fifo_4": {
+          "syntax": true,
+          "ref_implies_cand": false,
+          "cand_implies_ref": false,
+          "error": null,
+          "equivalent": false,
+          "relaxed": false
+        }
+      },
+      "mutants": 155,
+      "mutants_detected": 153,
+      "missed": [
+        {
+          "task": "human/counter_counter_2",
+          "mutation": "or_to_and",
+          "verdict": {
+            "syntax": true,
+            "ref_implies_cand": true,
+            "cand_implies_ref": true,
+            "error": null,
+            "equivalent": true,
+            "relaxed": true
+          }
+        },
+        {
+          "task": "human/fifo_1r1w_bypass_fifo_2",
+          "mutation": "neq_to_eq",
+          "verdict": {
+            "syntax": true,
+            "ref_implies_cand": true,
+            "cand_implies_ref": true,
+            "error": null,
+            "equivalent": true,
+            "relaxed": true
+          }
+        }
+      ],
+      "undecided": []
+    },
+    "machine": {
+      "tasks": 300,
+      "self_equivalent": 284,
+      "excluded": {
+        "machine/nl2sva_machine_3_8_0": {
+          "syntax": true,
+          "ref_implies_cand": false,
+          "cand_implies_ref": false,
+          "error": null,
+          "equivalent": false,
+          "relaxed": false
+        },
+        "machine/nl2sva_machine_3_11_0": {
+          "syntax": false,
+          "ref_implies_cand": null,
+          "cand_implies_ref": null,
+          "error": "file check.sv line 37: syntax error, unexpected ')', expecting case or casex or casez or if before ')'",
+          "equivalent": false,
+          "relaxed": false
+        },
+        "machine/nl2sva_machine_3_36_0": {
+          "syntax": false,
+          "ref_implies_cand": null,
+          "cand_implies_ref": null,
+          "error": "file check.sv line 36: syntax error, unexpected '(', expecting '[' before '('",
+          "equivalent": false,
+          "relaxed": false
+        },
+        "machine/nl2sva_machine_3_49_0": {
+          "syntax": false,
+          "ref_implies_cand": null,
+          "cand_implies_ref": null,
+          "error": "file check.sv line 36: syntax error, unexpected '(', expecting '[' before '('",
+          "equivalent": false,
+          "relaxed": false
+        },
+        "machine/nl2sva_machine_3_56_0": {
+          "syntax": false,
+          "ref_implies_cand": null,
+          "cand_implies_ref": null,
+          "error": "file check.sv line 36: syntax error, unexpected s_until before 's_until'",
+          "equivalent": false,
+          "relaxed": false
+        },
+        "machine/nl2sva_machine_3_85_0": {
+          "syntax": false,
+          "ref_implies_cand": null,
+          "cand_implies_ref": null,
+          "error": "file check.sv line 37: syntax error, unexpected ')', expecting case or casex or casez or if before ')'",
+          "equivalent": false,
+          "relaxed": false
+        },
+        "machine/nl2sva_machine_3_94_0": {
+          "syntax": false,
+          "ref_implies_cand": null,
+          "cand_implies_ref": null,
+          "error": "file check.sv line 36: syntax error, unexpected '(', expecting '[' before '('",
+          "equivalent": false,
+          "relaxed": false
+        },
+        "machine/nl2sva_machine_3_101_0": {
+          "syntax": false,
+          "ref_implies_cand": null,
+          "cand_implies_ref": null,
+          "error": "file check.sv line 37: syntax error, unexpected ')', expecting case or casex or casez or if before ')'",
+          "equivalent": false,
+          "relaxed": false
+        },
+        "machine/nl2sva_machine_3_102_0": {
+          "syntax": true,
+          "ref_implies_cand": false,
+          "cand_implies_ref": false,
+          "error": null,
+          "equivalent": false,
+          "relaxed": false
+        },
+        "machine/nl2sva_machine_3_122_0": {
+          "syntax": false,
+          "ref_implies_cand": null,
+          "cand_implies_ref": null,
+          "error": "file check.sv line 36: syntax error, unexpected '(', expecting '[' before '('",
+          "equivalent": false,
+          "relaxed": false
+        },
+        "machine/nl2sva_machine_3_149_0": {
+          "syntax": false,
+          "ref_implies_cand": null,
+          "cand_implies_ref": null,
+          "error": "file check.sv line 37: syntax error, unexpected ')', expecting case or casex or casez or if before ')'",
+          "equivalent": false,
+          "relaxed": false
+        },
+        "machine/nl2sva_machine_4_6_0": {
+          "syntax": true,
+          "ref_implies_cand": false,
+          "cand_implies_ref": false,
+          "error": null,
+          "equivalent": false,
+          "relaxed": false
+        },
+        "machine/nl2sva_machine_4_52_0": {
+          "syntax": false,
+          "ref_implies_cand": null,
+          "cand_implies_ref": null,
+          "error": "file check.sv line 36: syntax error, unexpected s_until before 's_until'",
+          "equivalent": false,
+          "relaxed": false
+        },
+        "machine/nl2sva_machine_4_81_0": {
+          "syntax": true,
+          "ref_implies_cand": false,
+          "cand_implies_ref": false,
+          "error": null,
+          "equivalent": false,
+          "relaxed": false
+        },
+        "machine/nl2sva_machine_4_95_0": {
+          "syntax": false,
+          "ref_implies_cand": null,
+          "cand_implies_ref": null,
+          "error": "file check.sv line 36: syntax error, unexpected '(', expecting '[' before '('",
+          "equivalent": false,
+          "relaxed": false
+        },
+        "machine/nl2sva_machine_4_101_0": {
+          "syntax": true,
+          "ref_implies_cand": false,
+          "cand_implies_ref": false,
+          "error": null,
+          "equivalent": false,
+          "relaxed": false
+        }
+      },
+      "mutants": 484,
+      "mutants_detected": 484,
+      "missed": [],
+      "undecided": []
+    }
+  }
+}

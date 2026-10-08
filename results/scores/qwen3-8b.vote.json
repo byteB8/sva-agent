@@ -1,0 +1,23 @@
+{
+  "verdicts_file": "results/scores/qwen3-8b.verdicts.jsonl",
+  "suites": {
+    "human": {
+      "tasks": 62,
+      "single_sample_equivalent": 22.2,
+      "compiling_sample_equivalent": 24.7,
+      "text_vote_equivalent": 22.6,
+      "voted_equivalent": 27.4,
+      "any_sample_equivalent": 51.6,
+      "mean_classes": 2.92
+    },
+    "machine": {
+      "tasks": 276,
+      "single_sample_equivalent": 30.7,
+      "compiling_sample_equivalent": 46.9,
+      "text_vote_equivalent": 45.3,
+      "voted_equivalent": 48.9,
+      "any_sample_equivalent": 67.8,
+      "mean_classes": 1.84
+    }
+  }
+}

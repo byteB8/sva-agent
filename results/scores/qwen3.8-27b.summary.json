@@ -1,0 +1,31 @@
+{
+  "samples_file": "results/raw/qwen3.8-27b.jsonl",
+  "mode": "free",
+  "bound": 20,
+  "fix_semicolon": false,
+  "checker_crash_samples": 3,
+  "unique_answers": 885,
+  "check_seconds": 12.4,
+  "suites": {
+    "human": {
+      "tasks": 62,
+      "samples_per_task": 4,
+      "syntax@1": 88.7,
+      "syntax@4": 98.4,
+      "equivalent@1": 42.7,
+      "equivalent@4": 53.2,
+      "relaxed@1": 73.0,
+      "relaxed@4": 87.1
+    },
+    "machine": {
+      "tasks": 276,
+      "samples_per_task": 4,
+      "syntax@1": 94.0,
+      "syntax@4": 97.5,
+      "equivalent@1": 63.9,
+      "equivalent@4": 68.1,
+      "relaxed@1": 72.6,
+      "relaxed@4": 77.2
+    }
+  }
+}

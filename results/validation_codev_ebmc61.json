@@ -1,0 +1,353 @@
+{
+  "mode": "free",
+  "bound": 20,
+  "seconds": 72.4,
+  "suites": {
+    "human_codev": {
+      "tasks": 73,
+      "self_equivalent": 57,
+      "excluded": {
+        "human_codev/FVEval-NL2SVA-Human-14": {
+          "syntax": false,
+          "ref_implies_cand": null,
+          "cand_implies_ref": null,
+          "error": "timeout",
+          "equivalent": false,
+          "relaxed": false
+        },
+        "human_codev/FVEval-NL2SVA-Human-18": {
+          "syntax": true,
+          "ref_implies_cand": false,
+          "cand_implies_ref": false,
+          "error": null,
+          "equivalent": false,
+          "relaxed": false
+        },
+        "human_codev/FVEval-NL2SVA-Human-19": {
+          "syntax": true,
+          "ref_implies_cand": false,
+          "cand_implies_ref": false,
+          "error": null,
+          "equivalent": false,
+          "relaxed": false
+        },
+        "human_codev/FVEval-NL2SVA-Human-20": {
+          "syntax": false,
+          "ref_implies_cand": null,
+          "cand_implies_ref": null,
+          "error": "CONVERSION ERROR",
+          "equivalent": false,
+          "relaxed": false
+        },
+        "human_codev/FVEval-NL2SVA-Human-21": {
+          "syntax": false,
+          "ref_implies_cand": null,
+          "cand_implies_ref": null,
+          "error": "CONVERSION ERROR",
+          "equivalent": false,
+          "relaxed": false
+        },
+        "human_codev/FVEval-NL2SVA-Human-22": {
+          "syntax": false,
+          "ref_implies_cand": null,
+          "cand_implies_ref": null,
+          "error": "CONVERSION ERROR",
+          "equivalent": false,
+          "relaxed": false
+        },
+        "human_codev/FVEval-NL2SVA-Human-23": {
+          "syntax": false,
+          "ref_implies_cand": null,
+          "cand_implies_ref": null,
+          "error": "CONVERSION ERROR",
+          "equivalent": false,
+          "relaxed": false
+        },
+        "human_codev/FVEval-NL2SVA-Human-24": {
+          "syntax": false,
+          "ref_implies_cand": null,
+          "cand_implies_ref": null,
+          "error": "CONVERSION ERROR",
+          "equivalent": false,
+          "relaxed": false
+        },
+        "human_codev/FVEval-NL2SVA-Human-35": {
+          "syntax": false,
+          "ref_implies_cand": null,
+          "cand_implies_ref": null,
+          "error": "timeout",
+          "equivalent": false,
+          "relaxed": false
+        },
+        "human_codev/FVEval-NL2SVA-Human-37": {
+          "syntax": false,
+          "ref_implies_cand": null,
+          "cand_implies_ref": null,
+          "error": "timeout",
+          "equivalent": false,
+          "relaxed": false
+        },
+        "human_codev/FVEval-NL2SVA-Human-51": {
+          "syntax": true,
+          "ref_implies_cand": false,
+          "cand_implies_ref": false,
+          "error": null,
+          "equivalent": false,
+          "relaxed": false
+        },
+        "human_codev/FVEval-NL2SVA-Human-52": {
+          "syntax": true,
+          "ref_implies_cand": false,
+          "cand_implies_ref": false,
+          "error": null,
+          "equivalent": false,
+          "relaxed": false
+        },
+        "human_codev/FVEval-NL2SVA-Human-65": {
+          "syntax": true,
+          "ref_implies_cand": false,
+          "cand_implies_ref": false,
+          "error": null,
+          "equivalent": false,
+          "relaxed": false
+        },
+        "human_codev/FVEval-NL2SVA-Human-66": {
+          "syntax": true,
+          "ref_implies_cand": false,
+          "cand_implies_ref": false,
+          "error": null,
+          "equivalent": false,
+          "relaxed": false
+        },
+        "human_codev/FVEval-NL2SVA-Human-70": {
+          "syntax": true,
+          "ref_implies_cand": false,
+          "cand_implies_ref": false,
+          "error": null,
+          "equivalent": false,
+          "relaxed": false
+        },
+        "human_codev/FVEval-NL2SVA-Human-71": {
+          "syntax": true,
+          "ref_implies_cand": false,
+          "cand_implies_ref": false,
+          "error": null,
+          "equivalent": false,
+          "relaxed": false
+        }
+      },
+      "mutants": 128,
+      "mutants_detected": 122,
+      "missed": [
+        {
+          "task": "human_codev/FVEval-NL2SVA-Human-0",
+          "mutation": "overlap_to_next",
+          "verdict": {
+            "syntax": true,
+            "ref_implies_cand": true,
+            "cand_implies_ref": true,
+            "error": null,
+            "equivalent": true,
+            "relaxed": true
+          }
+        },
+        {
+          "task": "human_codev/FVEval-NL2SVA-Human-0",
+          "mutation": "and_to_or",
+          "verdict": {
+            "syntax": true,
+            "ref_implies_cand": true,
+            "cand_implies_ref": true,
+            "error": null,
+            "equivalent": true,
+            "relaxed": true
+          }
+        },
+        {
+          "task": "human_codev/FVEval-NL2SVA-Human-1",
+          "mutation": "overlap_to_next",
+          "verdict": {
+            "syntax": true,
+            "ref_implies_cand": true,
+            "cand_implies_ref": true,
+            "error": null,
+            "equivalent": true,
+            "relaxed": true
+          }
+        },
+        {
+          "task": "human_codev/FVEval-NL2SVA-Human-1",
+          "mutation": "and_to_or",
+          "verdict": {
+            "syntax": true,
+            "ref_implies_cand": true,
+            "cand_implies_ref": true,
+            "error": null,
+            "equivalent": true,
+            "relaxed": true
+          }
+        },
+        {
+          "task": "human_codev/FVEval-NL2SVA-Human-2",
+          "mutation": "or_to_and",
+          "verdict": {
+            "syntax": true,
+            "ref_implies_cand": true,
+            "cand_implies_ref": true,
+            "error": null,
+            "equivalent": true,
+            "relaxed": true
+          }
+        },
+        {
+          "task": "human_codev/FVEval-NL2SVA-Human-69",
+          "mutation": "neq_to_eq",
+          "verdict": {
+            "syntax": true,
+            "ref_implies_cand": true,
+            "cand_implies_ref": true,
+            "error": null,
+            "equivalent": true,
+            "relaxed": true
+          }
+        }
+      ],
+      "undecided": []
+    },
+    "machine_codev": {
+      "tasks": 283,
+      "self_equivalent": 281,
+      "excluded": {
+        "machine_codev/FVEval-NL2SVA-Machine-156": {
+          "syntax": true,
+          "ref_implies_cand": false,
+          "cand_implies_ref": false,
+          "error": null,
+          "equivalent": false,
+          "relaxed": false
+        },
+        "machine_codev/FVEval-NL2SVA-Machine-231": {
+          "syntax": true,
+          "ref_implies_cand": false,
+          "cand_implies_ref": false,
+          "error": null,
+          "equivalent": false,
+          "relaxed": false
+        }
+      },
+      "mutants": 511,
+      "mutants_detected": 502,
+      "missed": [
+        {
+          "task": "machine_codev/FVEval-NL2SVA-Machine-32",
+          "mutation": "overlap_to_next",
+          "verdict": {
+            "syntax": true,
+            "ref_implies_cand": true,
+            "cand_implies_ref": true,
+            "error": null,
+            "equivalent": true,
+            "relaxed": true
+          }
+        },
+        {
+          "task": "machine_codev/FVEval-NL2SVA-Machine-32",
+          "mutation": "and_to_or",
+          "verdict": {
+            "syntax": true,
+            "ref_implies_cand": true,
+            "cand_implies_ref": true,
+            "error": null,
+            "equivalent": true,
+            "relaxed": true
+          }
+        },
+        {
+          "task": "machine_codev/FVEval-NL2SVA-Machine-79",
+          "mutation": "overlap_to_next",
+          "verdict": {
+            "syntax": true,
+            "ref_implies_cand": true,
+            "cand_implies_ref": true,
+            "error": null,
+            "equivalent": true,
+            "relaxed": true
+          }
+        },
+        {
+          "task": "machine_codev/FVEval-NL2SVA-Machine-79",
+          "mutation": "and_to_or",
+          "verdict": {
+            "syntax": true,
+            "ref_implies_cand": true,
+            "cand_implies_ref": true,
+            "error": null,
+            "equivalent": true,
+            "relaxed": true
+          }
+        },
+        {
+          "task": "machine_codev/FVEval-NL2SVA-Machine-79",
+          "mutation": "or_to_and",
+          "verdict": {
+            "syntax": true,
+            "ref_implies_cand": true,
+            "cand_implies_ref": true,
+            "error": null,
+            "equivalent": true,
+            "relaxed": true
+          }
+        },
+        {
+          "task": "machine_codev/FVEval-NL2SVA-Machine-79",
+          "mutation": "neq_to_eq",
+          "verdict": {
+            "syntax": true,
+            "ref_implies_cand": true,
+            "cand_implies_ref": true,
+            "error": null,
+            "equivalent": true,
+            "relaxed": true
+          }
+        },
+        {
+          "task": "machine_codev/FVEval-NL2SVA-Machine-127",
+          "mutation": "overlap_to_next",
+          "verdict": {
+            "syntax": true,
+            "ref_implies_cand": true,
+            "cand_implies_ref": true,
+            "error": null,
+            "equivalent": true,
+            "relaxed": true
+          }
+        },
+        {
+          "task": "machine_codev/FVEval-NL2SVA-Machine-127",
+          "mutation": "or_to_and",
+          "verdict": {
+            "syntax": true,
+            "ref_implies_cand": true,
+            "cand_implies_ref": true,
+            "error": null,
+            "equivalent": true,
+            "relaxed": true
+          }
+        },
+        {
+          "task": "machine_codev/FVEval-NL2SVA-Machine-127",
+          "mutation": "case_neq_to_eq",
+          "verdict": {
+            "syntax": true,
+            "ref_implies_cand": true,
+            "cand_implies_ref": true,
+            "error": null,
+            "equivalent": true,
+            "relaxed": true
+          }
+        }
+      ],
+      "undecided": []
+    }
+  }
+}
